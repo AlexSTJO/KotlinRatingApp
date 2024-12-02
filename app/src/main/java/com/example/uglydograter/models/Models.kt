@@ -24,3 +24,16 @@ data class RegisterResponse(
 data class LogoutRequest(
     val token: String
 )
+
+data class Pet(
+    val id: Int,
+    val name: String,
+    val breed: String,
+    val age: Int
+)
+
+data class PetsResponse(
+    val success: Int,
+    val pets: List<Pet>?,
+    val errormessage: String?
+)
