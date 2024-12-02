@@ -3,10 +3,13 @@ package com.example.uglydograter.api
 import com.example.uglydograter.models.LoginRequest
 import com.example.uglydograter.models.LoginResponse
 import com.example.uglydograter.models.LogoutRequest
+import com.example.uglydograter.models.PetsResponse
 import com.example.uglydograter.models.RegisterRequest
 import com.example.uglydograter.models.RegisterResponse
 import retrofit2.Call
 import retrofit2.http.Body
+import retrofit2.http.GET
+import retrofit2.http.Header
 import retrofit2.http.POST
 
 interface ApiService {
@@ -19,4 +22,7 @@ interface ApiService {
 
     @POST("logout")
     fun logout(@Body request: LogoutRequest): Call<Unit>
+
+    @GET("pets/list")
+    fun listPets(@Header("Authorization") token: String): Call<PetsResponse>
 }
