@@ -35,8 +35,14 @@
         <activity
             android:name=".ListPetsActivity"
             android:exported="true"
-            android:label="List Pets"
-            android:theme="@style/Theme.UglyDogRater" />
+            android:label="List Pets"  />
+
+        <activity
+            android:name=".AddPetActivity"
+            android:exported="true"
+            android:label="Main Page"
+            />
+
 
     </application>
 </manifest>

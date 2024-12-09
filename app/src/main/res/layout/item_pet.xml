@@ -1,30 +1,49 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:orientation="horizontal"
+    android:padding="8dp">
 
-    <TextView
-        android:id="@+id/petNameTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pet Name"
-        android:textStyle="bold"
-        android:textSize="18sp" />
+    <!-- Image on the Left -->
+    <ImageView
+        android:id="@+id/petImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Pet Image"
+        android:layout_marginEnd="8dp" />
 
-    <TextView
-        android:id="@+id/petBreedTextView"
-        android:layout_width="wrap_content"
+    <!-- Text on the Right -->
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Breed"
-        android:textSize="16sp" />
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/petAgeTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Age"
-        android:textSize="16sp" />
+        <TextView
+            android:id="@+id/petName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pet Name"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/petBirthdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Birthdate: YYYYMMDD" />
+
+        <TextView
+            android:id="@+id/petRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rating: 0.0" />
+
+        <TextView
+            android:id="@+id/petVotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Votes: 0" />
+
+    </LinearLayout>
 </LinearLayout>

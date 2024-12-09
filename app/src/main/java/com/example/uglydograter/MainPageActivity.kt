@@ -16,5 +16,11 @@ class MainPageActivity : Activity() {
         btnListPets.setOnClickListener {
             startActivity(Intent(this, ListPetsActivity::class.java))
         }
+
+        val btnAddPet = findViewById<Button>(R.id.btnAddPet)
+        btnAddPet.setOnClickListener {
+            val intent = Intent(this, AddPetActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
