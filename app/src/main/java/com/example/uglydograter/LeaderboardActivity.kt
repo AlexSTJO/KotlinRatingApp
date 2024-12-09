@@ -5,12 +5,10 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Button
-import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.uglydograter.LeaderboardAdapter
 import com.example.uglydograter.api.RetrofitClient
 import com.example.uglydograter.models.PetsResponse
 import retrofit2.Call
@@ -54,7 +52,6 @@ class LeaderboardActivity : AppCompatActivity() {
                     if (pets.isEmpty()) {
                         petsRecyclerView.visibility = View.GONE
                     } else {
-                        println("here")
                         petsRecyclerView.visibility = View.VISIBLE
                         petsRecyclerView.adapter = LeaderboardAdapter(pets)
                     }
