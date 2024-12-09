@@ -22,6 +22,12 @@ class MainPageActivity : Activity() {
             startActivity(Intent(this, AddPetActivity::class.java))
         }
 
+        val btnVotePet = findViewById<Button>(R.id.btnVotePet)
+        btnVotePet.setOnClickListener {
+            startActivity(Intent(this, VotePetActivity::class.java))
+        }
+
+
         val btnLeaderboard = findViewById<Button>(R.id.btnLeaderboard)
         btnLeaderboard.setOnClickListener {
             startActivity(Intent(this, LeaderboardActivity::class.java))

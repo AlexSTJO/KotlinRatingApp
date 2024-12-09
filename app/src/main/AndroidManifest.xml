@@ -48,6 +48,12 @@
             android:exported="true"
             android:label="Add Pets"
             />
+        <activity
+            android:name=".VotePetActivity"
+            android:exported="true"
+            android:label="Add Pets"
+            />
+
 
 
 

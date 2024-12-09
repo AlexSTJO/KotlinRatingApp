@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Pet Image -->
+    <ImageView
+        android:id="@+id/votePetImage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Pet Image" />
+
+    <!-- Pet Name -->
+    <TextView
+        android:id="@+id/votePetName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name: Loading..."
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Pet Birthdate -->
+    <TextView
+        android:id="@+id/votePetBirthdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Birthdate: Loading..."
+        android:textSize="16sp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Rating Input -->
+    <EditText
+        android:id="@+id/ratingInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter rating (1-5)"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp" />
+
+    <!-- Submit Vote Button -->
+    <Button
+        android:id="@+id/btnSubmitVote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Vote"
+        android:layout_marginTop="16dp" />
+
+    <!-- Back to Main Menu Button -->
+    <Button
+        android:id="@+id/btnBackToMainMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to Main Menu"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

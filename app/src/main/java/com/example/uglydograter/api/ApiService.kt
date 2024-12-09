@@ -4,15 +4,19 @@ import com.example.uglydograter.models.AddPetRequest
 import com.example.uglydograter.models.AddPetResponse
 import com.example.uglydograter.models.DeleteRequest
 import com.example.uglydograter.models.DeleteResponse
+import com.example.uglydograter.models.GetVoteResponse
 import com.example.uglydograter.models.ListRequest
 import com.example.uglydograter.models.LoginRequest
 import com.example.uglydograter.models.LoginResponse
 import com.example.uglydograter.models.LogoutRequest
+import com.example.uglydograter.models.Pet
 import com.example.uglydograter.models.PetsResponse
 import com.example.uglydograter.models.RegisterRequest
 import com.example.uglydograter.models.RegisterResponse
+import com.example.uglydograter.models.SaveVoteRequest
 import retrofit2.Call
 import retrofit2.http.Body
+import retrofit2.http.GET
 import retrofit2.http.POST
 
 
@@ -36,7 +40,13 @@ interface ApiService {
     @POST("pets/delete")
     fun deletePet(@Body request: DeleteRequest): Call<DeleteResponse>
 
-    @POST("ugly/leaderboard")
+    @POST("leaderboard")
     fun getLeaderboard(): Call<PetsResponse>
+
+    @GET("getvote")
+    fun getVote(): Call<GetVoteResponse>
+
+    @POST("savevote")
+    fun saveVote(@Body request: SaveVoteRequest): Call<Void>
 
 }

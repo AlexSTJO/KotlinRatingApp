@@ -7,7 +7,6 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.uglydograter.R
 import com.example.uglydograter.models.Pet
 
 class LeaderboardAdapter(
@@ -36,7 +35,7 @@ class LeaderboardAdapter(
         holder.petVotes.text = "Votes: ${pet.votes}"
         holder.petDescription.text = "Birthdate: ${pet.birthdate}"
 
-        // Load the image using Glide
+        // Load with glide(Not sure if good)
         Glide.with(holder.itemView.context)
             .load(pet.url)
             .into(holder.petImage)

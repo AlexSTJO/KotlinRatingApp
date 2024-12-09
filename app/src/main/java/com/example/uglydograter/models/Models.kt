@@ -34,6 +34,17 @@ data class Pet(
     val votes: String
 )
 
+data class GetVoteResponse(
+    val pet: VotePet?,
+    val success: Int
+)
+
+data class VotePet(
+    val id: String,
+    val name: String,
+    val birthdate: String,
+    val url: String
+)
 data class PetsResponse(
     val success: Int,
     val pets: List<Pet>?,
@@ -66,3 +77,10 @@ data class DeleteResponse(
     val success: Int,
     val errormessage: String?
 )
+
+data class SaveVoteRequest(
+    val token: String,
+    val pet_id: String,
+    val rating: Double
+)
+

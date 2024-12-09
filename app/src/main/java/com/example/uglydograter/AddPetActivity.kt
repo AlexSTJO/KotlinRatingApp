@@ -155,7 +155,7 @@ class AddPetActivity : AppCompatActivity() {
                         ).show()
                         finish()
                     } else {
-                        val errorMessage = response.body().toString() ?: "Unknown error"
+                        val errorMessage = response.body().toString()
                         val statusCode = response.code()
                         Toast.makeText(
                             this@AddPetActivity,
