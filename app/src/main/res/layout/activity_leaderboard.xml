@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- RecyclerView for displaying the leaderboard -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/petsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Back to Main Menu Button -->
+    <Button
+        android:id="@+id/btnBackToMainMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to Main Menu"
+        android:layout_margin="8dp" />
+</LinearLayout>

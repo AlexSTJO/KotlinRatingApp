@@ -35,4 +35,8 @@ interface ApiService {
 
     @POST("pets/delete")
     fun deletePet(@Body request: DeleteRequest): Call<DeleteResponse>
+
+    @POST("ugly/leaderboard")
+    fun getLeaderboard(): Call<PetsResponse>
+
 }

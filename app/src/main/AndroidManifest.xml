@@ -40,8 +40,15 @@
         <activity
             android:name=".AddPetActivity"
             android:exported="true"
-            android:label="Main Page"
+            android:label="Add Pets"
             />
+
+        <activity
+            android:name=".LeaderboardActivity"
+            android:exported="true"
+            android:label="Add Pets"
+            />
+
 
 
     </application>

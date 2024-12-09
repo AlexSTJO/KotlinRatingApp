@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <!-- Image of the Pet -->
+    <ImageView
+        android:id="@+id/leaderboardPetImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Pet Image"
+        android:layout_marginEnd="8dp" />
+
+    <!-- Details of the Pet -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/leaderboardPetName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pet Name"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/leaderboardPetRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rating: 0.0" />
+
+        <TextView
+            android:id="@+id/leaderboardPetVotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Votes: 0" />
+
+        <TextView
+            android:id="@+id/leaderboardPetDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Birthdate: YYYY-MM-DD"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>
